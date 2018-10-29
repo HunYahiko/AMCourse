@@ -1,14 +1,17 @@
 package utm.endava.lesson2;
 
+import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class League {
     private static double endGameTime = 90.0;
     public static void main(String[] args) {
 
+        /*Initialize teams and players*/
         Team greens = new Team("Greens");
         Team reds = new Team("Reds");
 
@@ -31,12 +34,14 @@ public class League {
         System.out.println(greens);
         System.out.println(reds);
 
+        /*Create a new game*/
         Game game1 = new Game();
         game1.setHomeTeam(reds);
         game1.setAwayTeam(greens);
 
         double randomTime = 0.0;
 
+        /*Generate random goals*/
         while ((randomTime = generateRandomTime(randomTime, endGameTime + 1.0)) < endGameTime){
             Goal goal = new Goal();
             goal.setTeam(generateRandomTeam(new ArrayList<>(Arrays.asList(greens, reds))));
@@ -47,10 +52,17 @@ public class League {
 
         System.out.println(game1.toString());
 
+        /*Split name and print*/
         Arrays.asList(greens, reds).forEach(team -> team.getPlayers().forEach(Player::splitFirstAndLastName));
-
         Arrays.asList(greens, reds).forEach(team ->
                 team.getPlayers().forEach(player -> System.out.println(player.printName())));
+
+        /*Search with criteria*/
+        Arrays.asList(greens, reds).forEach(team -> team.getPlayers().forEach(player -> {
+            if (hasCriteria("", player)) {
+                System.out.println("Found " + player.getName());
+            }
+        }));
     }
 
     public static double generateRandomTime(double start, double end) {
@@ -67,5 +79,8 @@ public class League {
         return team.getPlayers().get(random.nextInt(team.getPlayers().size()));
     }
 
-    
+    public static boolean hasCriteria(String criteria, Player player) {
+        return player.getLastName().contains(criteria);
+    }
+
 }
