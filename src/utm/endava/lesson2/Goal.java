@@ -33,14 +33,12 @@ public class Goal {
 
     @Override
     public String toString() {
-        StringBuilder printGoal = new StringBuilder();
-        printGoal.append("Goal scored after ")
-                .append(new DecimalFormat("##.##").format(time))
-                .append(" mins by ")
-                .append(player)
-                .append(" of The ")
-                .append(team.getName())
-                .append("\n");
-        return printGoal.toString();
+        return "Goal scored after " +
+                new DecimalFormat("##.##").format(time) +
+                " mins by " +
+                player +
+                " of The " +
+                team.getName() +
+                "\n";
     }
 }

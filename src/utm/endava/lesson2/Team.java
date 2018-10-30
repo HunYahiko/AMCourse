@@ -15,6 +15,11 @@ public class Team {
         this.name = name;
     }
 
+    public Team(String name, ArrayList<Player> players) {
+        this.name = name;
+        this.players = players;
+    }
+
     public String getName() {
         return name;
     }

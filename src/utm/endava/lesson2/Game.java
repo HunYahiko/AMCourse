@@ -13,6 +13,16 @@ public class Game {
     private static double endGameTime = 90.0;
     private static int defaultMaxGoals = 6;
 
+    public Game(Team homeTeam, Team awayTeam) {
+        this.homeTeam = homeTeam;
+        this.awayTeam = awayTeam;
+    }
+
+    public Game() {
+        this.awayTeam = null;
+        this.homeTeam = null;
+    }
+
     public Team getHomeTeam() {
         return homeTeam;
     }

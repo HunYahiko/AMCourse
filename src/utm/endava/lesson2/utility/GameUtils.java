@@ -53,4 +53,6 @@ public class GameUtils {
         teams.forEach(team -> team.getPlayers().forEach(Player::splitFirstAndLastName));
         teams.forEach(team -> team.getPlayers().forEach(player -> System.out.println(player.printName())));
     }
+
+
 }
