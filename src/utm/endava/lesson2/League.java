@@ -1,14 +1,17 @@
 package utm.endava.lesson2;
 
 import utm.endava.lesson2.utility.GameUtils;
+import utm.endava.lesson2.utility.PlayerDatabase;
 
+import java.time.LocalDateTime;
+import java.time.Period;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.stream.IntStream;
 
 public class League {
     private ArrayList<Team> teams = new ArrayList<>();
     private ArrayList<Game> games = new ArrayList<>();
+    private LocalDateTime gameDate;
 
     public ArrayList<Team> getTeams() {
         return teams;
@@ -26,51 +29,29 @@ public class League {
         this.games = games;
     }
 
-    public ArrayList<Team> createTeams() {
-        Team greens = new Team("Greens");
-        Team reds = new Team("Reds");
-        Team blues = new Team("Blues");
-
-        Player georgeElliot = new Player("George Elliot");
-        Player grahamGreen = new Player("Graham Green");
-        Player joffreyChaucer = new Player("Joffrey Chaucer");
-
-        Player robertService = new Player("Robert Service");
-        Player robbieBurns = new Player("Robbie Burns");
-        Player rafaelSabatini = new Player("Rafael Sabatini");
-
-        Player bonJovi = new Player("Bon Jovi");
-        Player bluenoAlbione = new Player("Blueno Albione");
-        Player bistroNemesis = new Player("Bistro Nemesis");
-
-        greens.addPlayer(georgeElliot);
-        greens.addPlayer(grahamGreen);
-        greens.addPlayer(joffreyChaucer);
-
-        reds.addPlayer(robbieBurns);
-        reds.addPlayer(robertService);
-        reds.addPlayer(rafaelSabatini);
-
-        blues.addPlayer(bonJovi);
-        blues.addPlayer(bluenoAlbione);
-        blues.addPlayer(bistroNemesis);
-
-        teams.add(greens);
-        teams.add(reds);
-        teams.add(blues);
+    public ArrayList<Team> createTeams(int numberOfPlayers, ArrayList<String> teamNames) {
+        try {
+            teamNames.forEach(teamName -> teams.add(PlayerDatabase.getTeam(numberOfPlayers, teamName)));
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("There are not enough players to create another team, we are sorry");
+            System.exit(0);
+        }
         return teams;
     }
 
     public ArrayList<Game> createGames(ArrayList<Team> teams) {
-        IntStream.range(0, 4)
-                .forEach(team -> {
-                    Team awayTeam;
-                    Game game1 = new Game();
-                    game1.setHomeTeam(GameUtils.generateRandomTeam(teams));
-                    while((awayTeam = GameUtils.generateRandomTeam(teams)) == game1.getHomeTeam());
-                    game1.setAwayTeam(awayTeam);
+        gameDate = LocalDateTime.now();
+
+        teams.forEach(team -> IntStream.range(teams.indexOf(team) + 1, teams.size())
+                .forEach(nextTeamIndex -> {
+                    Game game1 = new Game(team, teams.get(nextTeamIndex));
+                    game1.setGameDate(gameDate);
+                    Game game2 = new Game(teams.get(nextTeamIndex), team);
+                    game2.setGameDate(gameDate.plusDays(7));
+                    gameDate = gameDate.plusDays(7);
                     games.add(game1);
-                });
+                    games.add(game2);
+                }));
         return games;
     }
 
@@ -94,6 +75,17 @@ public class League {
         }
     }
 
+    public void getLeagueAnnouncement() {
+        Period leagueDuration = Period.between(games.get(0).getGameDate().toLocalDate(),
+                games.get(games.size() - 1).getGameDate().toLocalDate());
 
+        leagueDuration = leagueDuration.normalized();
 
+        System.out.println("The league is scheduled to run for "
+                + leagueDuration.getMonths() +
+                " month(s)" +
+                " and " +
+                leagueDuration.getDays() +
+                " day(s).");
+    }
 }

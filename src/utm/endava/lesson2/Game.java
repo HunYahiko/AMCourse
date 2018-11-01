@@ -2,6 +2,7 @@ package utm.endava.lesson2;
 
 import utm.endava.lesson2.utility.GameUtils;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +11,7 @@ public class Game {
     private Team awayTeam;
     private List<Goal> goals = new ArrayList<>();
     private GameStatistics gameStatistics;
+    private LocalDateTime gameDate;
 
     private static double endGameTime = 90.0;
     private static int defaultMaxGoals = 6;
@@ -52,12 +54,23 @@ public class Game {
         this.goals = goals;
     }
 
+    public LocalDateTime getGameDate() {
+        return gameDate;
+    }
+
+    public void setGameDate(LocalDateTime gameDate) {
+        this.gameDate = gameDate;
+    }
+
     public void addGoal(Goal goal) {
         goals.add(goal);
     }
 
     public void playGame(int maxGoals) {
         double randomTime = 0.0;
+
+        /*Print HomeTeam vs AwayTeam*/
+        declarePlayingTeams();
 
         /*Print teams*/
         System.out.println(awayTeam);
@@ -71,6 +84,9 @@ public class Game {
 
         /*Print game statistics*/
         System.out.println(this);
+
+        /*Print game statistics*/
+        gameConclusion();
     }
 
     public void playGame() {
@@ -78,6 +94,9 @@ public class Game {
 
         /*Print HomeTeam vs AwayTeam*/
         declarePlayingTeams();
+
+        /*Display Game Date*/
+        declareGameDate();
 
         /*Print teams comp*/
         System.out.println(awayTeam);
@@ -102,6 +121,8 @@ public class Game {
     private void declarePlayingTeams() {
         System.out.println(homeTeam.getName() + " vs " + awayTeam.getName() + "\n");
     }
+
+    private void declareGameDate() { System.out.println("Date: " + gameDate.toLocalDate().toString()); }
 
     private void gameConclusion() {
         gameStatistics.setWinner(this, homeTeam, awayTeam);
