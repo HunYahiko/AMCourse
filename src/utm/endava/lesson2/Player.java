@@ -10,7 +10,7 @@ public class Player {
     }
 
     public Player() {
-        this.name = null;
+        this.name = "";
     }
 
     public String getName() {

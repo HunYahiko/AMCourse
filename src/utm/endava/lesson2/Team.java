@@ -5,19 +5,23 @@ import java.util.List;
 
 public class Team {
     private String name;
+    private TeamStatistics teamStatistics;
     private List<Player> players = new ArrayList<>();
 
     public Team() {
-        this.name = null;
+        this.name = "";
+        this.teamStatistics = new TeamStatistics();
     }
 
     public Team(String name) {
         this.name = name;
+        this.teamStatistics = new TeamStatistics();
     }
 
     public Team(String name, ArrayList<Player> players) {
         this.name = name;
         this.players = players;
+        this.teamStatistics = new TeamStatistics();
     }
 
     public String getName() {
@@ -38,6 +42,14 @@ public class Team {
 
     public void addPlayer(Player player) {
         this.players.add(player);
+    }
+
+    public TeamStatistics getTeamStatistics() {
+        return teamStatistics;
+    }
+
+    public void setTeamStatistics(TeamStatistics teamStatistics) {
+        this.teamStatistics = teamStatistics;
     }
 
     @Override

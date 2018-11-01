@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/utm/endava/lesson2/Game.java" line="105" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="985a05bb-a6d4-4db8-8065-e4c407a5e8ca" name="Default Changelist" comment="Exercise 6.3 and half 7.4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/League.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/League.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Endava_AM/utm/endava/lesson2/utility/GameUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utm/endava/lesson2/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utm/endava/lesson2/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utm/endava/lesson2/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utm/endava/lesson2/Goal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utm/endava/lesson2/League.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utm/endava/lesson2/League.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utm/endava/lesson2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utm/endava/lesson2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utm/endava/lesson2/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utm/endava/lesson2/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utm/endava/lesson2/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utm/endava/lesson2/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utm/endava/lesson2/utility/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utm/endava/lesson2/utility/GameUtils.java" afterDir="false" />
     </list>
@@ -20,32 +30,34 @@
     <session id="1016488285">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="7" />
+          <entry key="java" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7324" />
+          <entry key="java" value="12183" />
           <entry key="txt" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7324" />
+          <entry key="JAVA" value="12183" />
           <entry key="PLAIN_TEXT" value="43" />
         </counts>
       </usages-collector>
@@ -56,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-89">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="153">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="e#167#168#0" expanded="true" />
                 <element signature="e#199#200#0" expanded="true" />
@@ -70,13 +82,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Team.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+            <state relative-caret-position="119">
+              <caret line="8" column="52" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Team#0;class#Team#0" />
+                <element signature="method#Team#1;class#Team#0" />
                 <element signature="method#Team#2;class#Team#0" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
                 <element signature="method#toString#0;class#Team#0" />
               </folding>
             </state>
@@ -86,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Goal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="408">
+              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
                 <element signature="e#249#250#0" expanded="true" />
                 <element signature="e#281#282#0" expanded="true" />
@@ -100,15 +112,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="595">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#Game#0;class#Game#0" />
                 <element signature="method#Game#1;class#Game#0" />
-                <element signature="method#toString#0;class#Game#0" />
                 <element signature="method#playGame#0;class#Game#0" />
                 <element signature="method#playGame#1;class#Game#0" />
+                <element signature="method#gameConclusion#0;class#Game#0" />
+                <element signature="method#addGoals#0;class#Game#0" />
+                <element signature="method#addPoints#0;class#Game#0" />
+                <element signature="method#toString#0;class#Game#0" />
               </folding>
             </state>
           </provider>
@@ -117,11 +131,54 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/League.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="51" column="44" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+            <state relative-caret-position="464">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#createTeams#0;class#League#0" />
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#446#447#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="method#createGames#0;class#League#0" />
+                <element signature="method#leagueConclusion#0;class#League#0" />
+                <element signature="method#printResults#0;class#League#0" />
+                <element signature="method#declareWinner#0;class#League#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/TeamStatistics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding>
+                <element signature="e#149#150#0" expanded="true" />
+                <element signature="e#185#186#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="method#toString#0;class#TeamStatistics#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/GameStatistics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+              <folding>
+                <element signature="method#setWinner#0;class#GameStatistics#0" />
               </folding>
             </state>
           </provider>
@@ -130,8 +187,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="238">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,8 +199,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/utility/GameUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="273">
+              <caret line="120" column="72" selection-start-line="120" selection-start-column="72" selection-end-line="120" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addGameGoals#0;class#GameUtils#0" />
@@ -153,6 +210,7 @@
                 <element signature="method#searchPlayer#0;class#GameUtils#0" />
                 <element signature="method#hasCriteria#0;class#GameUtils#0" />
                 <element signature="method#printTeamMembers#0;class#GameUtils#0" />
+                <element signature="method#getWinnerTeam#0;class#GameUtils#0" />
               </folding>
             </state>
           </provider>
@@ -173,12 +231,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/Player.java" />
         <option value="$PROJECT_DIR$/src/utm/endava/lesson2/utils/GameUtils.java" />
-        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/Main.java" />
-        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/Team.java" />
-        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/Game.java" />
         <option value="$PROJECT_DIR$/src/utm/endava/lesson2/Goal.java" />
+        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/Player.java" />
+        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/utility/GameStatistics.java" />
+        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/GameStatistics.java" />
+        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/Team.java" />
+        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/TeamStatistics.java" />
+        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/Game.java" />
+        <option value="$PROJECT_DIR$/src/utm/endava/lesson2/Main.java" />
         <option value="$PROJECT_DIR$/src/utm/endava/lesson2/utility/GameUtils.java" />
         <option value="$PROJECT_DIR$/src/utm/endava/lesson2/League.java" />
       </list>
@@ -191,8 +252,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="120" />
-    <option name="y" value="65" />
+    <option name="x" value="116" />
+    <option name="y" value="10" />
     <option name="width" value="1750" />
     <option name="height" value="1040" />
   </component>
@@ -203,6 +264,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,20 +283,34 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lesson2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AM_Lesson2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AM_Lesson2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson2" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540917451957" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541057264955" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="utm.endava.lesson2" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -299,18 +375,20 @@
       <workItem from="1540821793322" duration="46000" />
       <workItem from="1540821852690" duration="890000" />
       <workItem from="1540832514793" duration="17653000" />
-      <workItem from="1540914457937" duration="2979000" />
+      <workItem from="1540914457937" duration="8715000" />
+      <workItem from="1540939117684" duration="1426000" />
+      <workItem from="1541002391022" duration="6073000" />
+      <workItem from="1541053121328" duration="4193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21568000" />
+    <option name="totallyTimeSpent" value="38996000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="96" y="52" width="1400" height="832" extended-state="0" />
-    <editor active="true" />
+    <frame x="93" y="8" width="1400" height="832" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27014926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -319,7 +397,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32904148" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32904148" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34620887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,37 +429,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Exercise 6.3 and half 7.4" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Goal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="method#toString#0;class#Goal#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Game#0;class#Game#0" />
-            <element signature="method#Game#1;class#Game#0" />
-            <element signature="method#toString#0;class#Game#0" />
-            <element signature="method#playGame#0;class#Game#0" />
-            <element signature="method#playGame#1;class#Game#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="153">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="e#167#168#0" expanded="true" />
             <element signature="e#199#200#0" expanded="true" />
@@ -392,32 +443,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        <state relative-caret-position="119">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Team#0;class#Team#0" />
+            <element signature="method#Team#1;class#Team#0" />
             <element signature="method#Team#2;class#Team#0" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
             <element signature="method#toString#0;class#Team#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" />
+            <element signature="method#Game#1;class#Game#0" />
+            <element signature="method#playGame#0;class#Game#0" />
+            <element signature="method#playGame#1;class#Game#0" />
+            <element signature="method#gameConclusion#0;class#Game#0" />
+            <element signature="method#addGoals#0;class#Game#0" />
+            <element signature="method#addPoints#0;class#Game#0" />
+            <element signature="method#toString#0;class#Game#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/TeamStatistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="method#toString#0;class#TeamStatistics#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Goal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="method#toString#0;class#Goal#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="238">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/GameStatistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <element signature="method#setWinner#0;class#GameStatistics#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/utility/GameUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="273">
+          <caret line="120" column="72" selection-start-line="120" selection-start-column="72" selection-end-line="120" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addGameGoals#0;class#GameUtils#0" />
@@ -427,20 +535,106 @@
             <element signature="method#searchPlayer#0;class#GameUtils#0" />
             <element signature="method#hasCriteria#0;class#GameUtils#0" />
             <element signature="method#printTeamMembers#0;class#GameUtils#0" />
+            <element signature="method#getWinnerTeam#0;class#GameUtils#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utm/endava/lesson2/League.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="51" column="44" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+        <state relative-caret-position="464">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#createTeams#0;class#League#0" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="method#createGames#0;class#League#0" />
+            <element signature="method#leagueConclusion#0;class#League#0" />
+            <element signature="method#printResults#0;class#League#0" />
+            <element signature="method#declareWinner#0;class#League#0" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Endava_AM</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
