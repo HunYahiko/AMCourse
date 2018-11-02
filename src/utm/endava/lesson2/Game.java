@@ -9,7 +9,7 @@ import java.util.List;
 public class Game {
     private Team homeTeam;
     private Team awayTeam;
-    private List<Goal> goals = new ArrayList<>();
+    private List<GameEvent> gameEvents = new ArrayList<>();
     private GameStatistics gameStatistics;
     private LocalDateTime gameDate;
 
@@ -46,12 +46,12 @@ public class Game {
         this.awayTeam = awayTeam;
     }
 
-    public List<Goal> getGoals() {
-        return goals;
+    public List<GameEvent> getGameEvents() {
+        return gameEvents;
     }
 
-    public void setGoals(List<Goal> goals) {
-        this.goals = goals;
+    public void setGameEvents(List<GameEvent> gameEvents) {
+        this.gameEvents = gameEvents;
     }
 
     public LocalDateTime getGameDate() {
@@ -62,60 +62,44 @@ public class Game {
         this.gameDate = gameDate;
     }
 
-    public void addGoal(Goal goal) {
-        goals.add(goal);
-    }
-
-    public void playGame(int maxGoals) {
-        double randomTime = 0.0;
-
-        /*Print HomeTeam vs AwayTeam*/
-        declarePlayingTeams();
-
-        /*Print teams*/
-        System.out.println(awayTeam);
-        System.out.println(homeTeam);
-
-        /*Generate random goals*/
-        while ((randomTime = GameUtils.generateRandomTime(randomTime, endGameTime + 0.01)) < endGameTime
-                && goals.size() < maxGoals){
-            goals.add(GameUtils.addGameGoals(this, randomTime));
-        }
-
-        /*Print game statistics*/
-        System.out.println(this);
-
-        /*Print game statistics*/
-        gameConclusion();
-    }
-
     public void playGame() {
-        double randomTime = 0.0;
-
+        double gameTime = 0.0;
+    
         /*Print HomeTeam vs AwayTeam*/
         declarePlayingTeams();
-
+    
         /*Display Game Date*/
         declareGameDate();
-
-        /*Print teams comp*/
-        System.out.println(awayTeam);
-        System.out.println(homeTeam);
-
-        /*Generate random goals*/
-        while (goals.size() < defaultMaxGoals) {
-            randomTime = GameUtils.generateRandomTime(randomTime, endGameTime + 0.01);
-            if (randomTime > endGameTime) {
-                break;
+        
+        /*Generate random events*/
+        GameEvent gameEvent;
+        do {
+            if (GameUtils.random.nextInt(2) != 0) {
+                gameEvent = GameUtils.generateRandomEvent(this, gameTime);
+                if (gameEvents.size() > 5 && gameEvent instanceof Goal
+                            && !areNotGoals(gameEvents.subList(gameEvents.size() - 5, gameEvents.size()))) {
+                    ++gameTime;
+                } else {
+                    gameEvents.add(gameEvent);
+                    ++gameTime;
+                }
             }
-            goals.add(GameUtils.addGameGoals(this, randomTime));
-        }
-
-        /*Print game goals*/
-        System.out.println(this);
+        } while (gameTime <= endGameTime);
+        
+        /*Print game events*/
+        gameDescription();
 
         /*Print game statistics*/
         gameConclusion();
+    }
+    
+    private boolean areNotGoals(List<GameEvent> lastFiveEvents) {
+        for (GameEvent gameEvent : lastFiveEvents) {
+            if (gameEvent instanceof Goal) {
+                return false;
+            }
+        }
+        return true;
     }
 
     private void declarePlayingTeams() {
@@ -123,6 +107,8 @@ public class Game {
     }
 
     private void declareGameDate() { System.out.println("Date: " + gameDate.toLocalDate().toString()); }
+    
+    private void gameDescription() { gameEvents.forEach(System.out::println); }
 
     private void gameConclusion() {
         gameStatistics.setWinner(this, homeTeam, awayTeam);
@@ -157,10 +143,10 @@ public class Game {
     @Override
     public String toString() {
         StringBuilder goals = new StringBuilder("Goals:\n");
-        for (Goal goal : this.goals) {
+        for (GameEvent goal : this.gameEvents) {
             goals.append(goal);
         }
         return goals.toString();
     }
-
+    
 }

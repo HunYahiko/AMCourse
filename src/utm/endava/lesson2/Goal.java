@@ -2,32 +2,17 @@ package utm.endava.lesson2;
 
 import java.text.DecimalFormat;
 
-public class Goal {
-    private Team team;
-    private Player player;
-    private double time;
-
-    public Team getTeam() {
-        return team;
+public class Goal extends GameEvent {
+    
+    public Goal() {
+        this.team = new Team();
+        this.player = new Player();
+        this.time = 0.0;
     }
-
-    public void setTeam(Team team) {
+    
+    public Goal(Team team, Player player, double time) {
         this.team = team;
-    }
-
-    public Player getPlayer() {
-        return player;
-    }
-
-    public void setPlayer(Player player) {
         this.player = player;
-    }
-
-    public double getTime() {
-        return time;
-    }
-
-    public void setTime(double time) {
         this.time = time;
     }
 
@@ -38,7 +23,6 @@ public class Goal {
                 " mins by " +
                 player +
                 " of The " +
-                team.getName() +
-                "\n";
+                team.getName();
     }
 }

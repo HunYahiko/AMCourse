@@ -7,31 +7,15 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 
 public class GameUtils {
-
-    public static Goal addGameGoals(Game game, double randomTime) {
-        Goal goal = new Goal();
-
-        goal.setTeam(GameUtils.generateRandomTeam(
-                new ArrayList<>(Arrays.asList(game.getHomeTeam(), game.getAwayTeam()))));
-        goal.setPlayer(GameUtils.generateRandomPlayer(goal.getTeam()));
-        goal.setTime(randomTime);
-
-
-
-        return goal;
-    }
-
-    public static double generateRandomTime(double start, double end) {
-        return ThreadLocalRandom.current().nextDouble(start, end);
-    }
+    
+    public static Random random = new Random();
 
     public static Team generateRandomTeam(ArrayList<Team> teams) {
-        Random random = new Random();
+        
         return teams.get(random.nextInt(teams.size()));
     }
 
     public static Player generateRandomPlayer(Team team) {
-        Random random = new Random();
         return team.getPlayers().get(random.nextInt(team.getPlayers().size()));
     }
 
@@ -53,7 +37,10 @@ public class GameUtils {
     }
 
     public static int getTeamGoals(Game game, Team team) {
-        Long goalCounter = game.getGoals().stream().filter(goal -> goal.getTeam().equals(team)).count();
+        Long goalCounter = game.getGameEvents()
+                                   .stream()
+                                   .filter(event -> event instanceof Goal)
+                                   .filter(goal -> goal.getTeam().equals(team)).count();
         return goalCounter.intValue();
     }
 
@@ -87,8 +74,6 @@ public class GameUtils {
 
         winnerTeams = finalWinnerTeams.stream().distinct().collect(Collectors.toCollection(ArrayList::new));
 
-        winnerTeams.forEach(team -> System.out.println(team.getName()));
-
         if (winnerTeams.size() > 1) {
             winnerTeams = compareByGoals(winnerTeams);
         }
@@ -114,12 +99,20 @@ public class GameUtils {
                         .getNumberOfGoals())
                 .forEach(winnerTeams::add);
 
-        winnerTeams.forEach(team -> System.out.println(team.getName()));
-
         winnerTeams = finalWinnerTeams.stream().distinct().collect(Collectors.toCollection(ArrayList::new));
 
-        winnerTeams.forEach(team -> System.out.println(team.getName()));
-
         return winnerTeams;
+    }
+    
+    public static GameEvent generateRandomEvent(Game game, double time) {
+        int eventId = random.nextInt(2);
+        
+        GameEvent gameEvent = Events.getById(eventId).createInstance();
+        gameEvent.setTeam(generateRandomTeam(
+                new ArrayList<>(Arrays.asList(game.getHomeTeam(), game.getAwayTeam()))));
+        gameEvent.setPlayer(generateRandomPlayer(gameEvent.getTeam()));
+        gameEvent.setTime(time);
+        
+        return gameEvent;
     }
 }
