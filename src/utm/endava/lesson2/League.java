@@ -6,6 +6,8 @@ import utm.endava.lesson2.utility.PlayerDatabase;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.stream.IntStream;
 
 public class League {
@@ -56,22 +58,19 @@ public class League {
     }
 
     public void leagueConclusion() {
-        printResults();
-        declareWinner();
+        showBestTeams();
     }
 
-    private void printResults() {
+    private void showBestTeams() {
+        Collections.sort(teams);
         teams.forEach(team -> System.out.println("Team " + team.getName() + "\n" + team.getTeamStatistics() + "\n"));
-    }
-
-    private void declareWinner() {
-        ArrayList<Team> leagueWinnerTeam = GameUtils.getLeagueWinner(teams);
-
-        if (leagueWinnerTeam.size() > 1) {
-            System.out.print("This year's champions are: ");
-            leagueWinnerTeam.forEach(team -> System.out.println("The " + team.getName()));
-        } else {
-            System.out.println("This year's champions are: The " + leagueWinnerTeam.get(0).getName());
+        System.out.print("This year's champions are: The " + teams.get(0).getName());
+        for (Team team : teams) {
+            if (team.equals(teams.get(0)) && !team.getName().equals(teams.get(0).getName())) {
+                System.out.print(", The " + team.getName());
+            } else {
+                break;
+            }
         }
     }
 

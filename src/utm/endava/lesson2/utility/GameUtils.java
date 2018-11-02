@@ -44,43 +44,6 @@ public class GameUtils {
         return goalCounter.intValue();
     }
 
-    public static GameStatistics getWinnerTeam(Team homeTeam, Team awayTeam, int homeTeamGoals, int awayTeamGoals) {
-        GameStatistics gameStatistics = new GameStatistics();
-        if (homeTeamGoals == awayTeamGoals) {
-            gameStatistics.setDraw(true);
-            return gameStatistics;
-        }
-
-        gameStatistics.setWinnerTeam(homeTeamGoals > awayTeamGoals ? homeTeam : awayTeam);
-        return gameStatistics;
-    }
-
-    public static ArrayList<Team> getLeagueWinner(ArrayList<Team> teams) {
-        ArrayList<Team> winnerTeams = new ArrayList<>();
-
-        winnerTeams.add(teams
-                .stream()
-                .max(Comparator.comparing(team -> team.getTeamStatistics().getPoints())).get());
-
-        ArrayList<Team> finalWinnerTeams = winnerTeams;
-        teams.stream()
-                .filter(team -> team
-                        .getTeamStatistics()
-                        .getPoints() == finalWinnerTeams
-                        .get(0)
-                        .getTeamStatistics()
-                        .getPoints())
-                .forEach(winnerTeams::add);
-
-        winnerTeams = finalWinnerTeams.stream().distinct().collect(Collectors.toCollection(ArrayList::new));
-
-        if (winnerTeams.size() > 1) {
-            winnerTeams = compareByGoals(winnerTeams);
-        }
-
-        return winnerTeams;
-    }
-
     private static ArrayList<Team> compareByGoals(ArrayList<Team> teams) {
         ArrayList<Team> winnerTeams = new ArrayList<>();
 
