@@ -1,9 +1,8 @@
 package utm.endava.lesson2.utility;
 
-import utm.endava.lesson2.*;
+import utm.endava.lesson2.Model.*;
 
 import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 
 public class GameUtils {

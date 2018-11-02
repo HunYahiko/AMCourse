@@ -1,4 +1,4 @@
-package utm.endava.lesson2;
+package utm.endava.lesson2.Model;
 
 public class Player {
     private String name;

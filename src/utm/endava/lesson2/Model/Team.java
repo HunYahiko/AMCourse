@@ -1,4 +1,4 @@
-package utm.endava.lesson2;
+package utm.endava.lesson2.Model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,10 +40,6 @@ public class Team implements Comparable<Team> {
         this.players = players;
     }
 
-    public void addPlayer(Player player) {
-        this.players.add(player);
-    }
-
     public TeamStatistics getTeamStatistics() {
         return teamStatistics;
     }
@@ -57,7 +53,7 @@ public class Team implements Comparable<Team> {
         StringBuilder toString = new StringBuilder(name);
         toString.append("\n");
         for (Player player : players) {
-            toString.append(player + "\n");
+            toString.append(player).append("\n");
         }
         return toString.toString();
     }
@@ -77,26 +73,4 @@ public class Team implements Comparable<Team> {
         return Integer.compare(team2.getTeamStatistics().getNumberOfGoals(), team1.getTeamStatistics().getNumberOfGoals());
     }
     
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null) {
-            return false;
-        }
-    
-        if (!Team.class.isAssignableFrom(obj.getClass())) {
-            return false;
-        }
-        
-        final Team team = (Team) obj;
-        
-        if (this.teamStatistics.getPoints() != team.getTeamStatistics().getPoints()) {
-            return false;
-        }
-        
-        if (this.teamStatistics.getNumberOfGoals() != team.getTeamStatistics().getNumberOfGoals()) {
-            return false;
-        }
-        
-        return true;
-    }
 }

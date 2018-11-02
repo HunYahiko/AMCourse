@@ -1,4 +1,4 @@
-package utm.endava.lesson2;
+package utm.endava.lesson2.Model;
 
 public abstract class GameEvent {
     protected Team team;

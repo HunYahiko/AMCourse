@@ -1,4 +1,4 @@
-package utm.endava.lesson2;
+package utm.endava.lesson2.Model;
 
 import java.text.DecimalFormat;
 

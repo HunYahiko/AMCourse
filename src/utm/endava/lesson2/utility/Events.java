@@ -1,8 +1,8 @@
 package utm.endava.lesson2.utility;
 
-import utm.endava.lesson2.GameEvent;
-import utm.endava.lesson2.Goal;
-import utm.endava.lesson2.Possession;
+import utm.endava.lesson2.Model.GameEvent;
+import utm.endava.lesson2.Model.Goal;
+import utm.endava.lesson2.Model.Possession;
 
 import java.util.function.Supplier;
 

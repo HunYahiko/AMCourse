@@ -1,4 +1,4 @@
-package utm.endava.lesson2;
+package utm.endava.lesson2.Model;
 
 public class TeamStatistics {
     private int numberOfGoals;
@@ -18,14 +18,6 @@ public class TeamStatistics {
 
     public void setPoints(int points) {
         this.points = points;
-    }
-
-    public void addGoals(int numberOfGoals) {
-        this.numberOfGoals += numberOfGoals;
-    }
-
-    public void addPoints(int points) {
-        this.points += points;
     }
 
     @Override

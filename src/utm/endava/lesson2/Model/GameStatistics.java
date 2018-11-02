@@ -1,6 +1,4 @@
-package utm.endava.lesson2;
-
-import utm.endava.lesson2.utility.GameUtils;
+package utm.endava.lesson2.Model;
 
 public class GameStatistics {
     private Team winnerTeam;
@@ -54,15 +52,5 @@ public class GameStatistics {
     public void setAwayTeamGoals(int awayTeamGoals) {
         this.awayTeamGoals = awayTeamGoals;
     }
-
-    public void setWinner(Game game, Team homeTeam, Team awayTeam) {
-        homeTeamGoals = GameUtils.getTeamGoals(game, homeTeam);
-        awayTeamGoals = GameUtils.getTeamGoals(game, awayTeam);
-
-        if (homeTeamGoals == awayTeamGoals) {
-            isDraw = true;
-        } else {
-            winnerTeam = homeTeamGoals > awayTeamGoals ? homeTeam : awayTeam;
-        }
-    }
+    
 }
