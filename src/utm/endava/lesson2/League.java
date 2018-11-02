@@ -1,12 +1,11 @@
 package utm.endava.lesson2;
 
-import utm.endava.lesson2.utility.GameUtils;
 import utm.endava.lesson2.utility.PlayerDatabase;
+import utm.endava.lesson2.utility.PlayerDatabaseException;
 
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.stream.IntStream;
 
@@ -31,12 +30,9 @@ public class League {
         this.games = games;
     }
 
-    public ArrayList<Team> createTeams(int numberOfPlayers, ArrayList<String> teamNames) {
-        try {
-            teamNames.forEach(teamName -> teams.add(PlayerDatabase.getTeam(numberOfPlayers, teamName)));
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("There are not enough players to create another team, we are sorry");
-            System.exit(0);
+    public ArrayList<Team> createTeams(int numberOfPlayers, ArrayList<String> teamNames) throws PlayerDatabaseException {
+        for (String teamName : teamNames) {
+            teams.add(PlayerDatabase.getTeam(numberOfPlayers, teamName));
         }
         return teams;
     }

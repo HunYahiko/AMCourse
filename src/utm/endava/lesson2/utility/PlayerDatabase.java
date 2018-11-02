@@ -38,15 +38,16 @@ public class PlayerDatabase {
         return players;
     }
 
-    public static Team getTeam(int numberOfPlayers, String teamName) {
-        if (lastTakenPlayerIndex + numberOfPlayers > players.size()) {
-            throw new ArrayIndexOutOfBoundsException();
-        }
-        Team newTeam = new Team(teamName);
-        IntStream.range(lastTakenPlayerIndex, lastTakenPlayerIndex + numberOfPlayers)
+    public static Team getTeam(int numberOfPlayers, String teamName) throws PlayerDatabaseException {
+        try {
+            Team newTeam = new Team(teamName);
+            IntStream.range(lastTakenPlayerIndex, lastTakenPlayerIndex + numberOfPlayers)
                     .forEach(index -> newTeam.addPlayer(new Player(players.get(index))));
-
-        lastTakenPlayerIndex += numberOfPlayers;
-        return newTeam;
+    
+            lastTakenPlayerIndex += numberOfPlayers;
+            return newTeam;
+        } catch (IndexOutOfBoundsException e) {
+            throw new PlayerDatabaseException();
+        }
     }
 }
