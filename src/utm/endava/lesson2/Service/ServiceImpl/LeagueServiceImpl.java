@@ -22,7 +22,7 @@ public class LeagueServiceImpl implements LeagueService {
     public ArrayList<Team> createTeams(int numberOfPlayers, ArrayList<String> teamNames, League league) throws PlayerDatabaseException {
         for (String teamName : teamNames) {
             league.getTeams()
-                    .add(PlayerDatabase.getTeam(numberOfPlayers, teamName));
+                    .add(PlayerDatabase.getTeam(teamName));
         }
         return league.getTeams();
     }

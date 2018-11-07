@@ -18,7 +18,7 @@ public class Team implements Comparable<Team> {
         this.teamStatistics = new TeamStatistics();
     }
 
-    public Team(String name, ArrayList<Player> players) {
+    public Team(String name, List<Player> players) {
         this.name = name;
         this.players = players;
         this.teamStatistics = new TeamStatistics();
